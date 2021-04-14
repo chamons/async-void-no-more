@@ -7,7 +7,7 @@ async-void-no-more is a simple tool to track down async void tests that should b
 This test:
 
 ```csharp
-        public void UrlQueriesArrayMultiValid() => TestStatus(async (a, b) => await new lib.Search(a, b));
+        public void MyTest() => TestStatus(async (a, b) => await new lib.Search(a, b));
 ```
 
 should return a Task, or else exceptions thrown will be lost and sadness will ensure.
